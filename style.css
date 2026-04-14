@@ -1,0 +1,56 @@
+/* Custom styles for the visualizer */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #111827; /* bg-gray-900 */
+}
+
+.bar {
+    display: inline-block;
+    margin: 0 2px;
+    background-color: #4B5563; /* bg-gray-600 */
+    border-radius: 4px 4px 0 0;
+    transition: height 0.3s ease, background-color 0.3s ease;
+}
+
+.bar-pivot {
+    background-color: #8B5CF6; /* violet-500 */
+}
+
+.bar-comparing {
+    background-color: #FBBF24; /* amber-400 */
+}
+
+.bar-swap {
+    background-color: #EF4444; /* red-500 */
+}
+
+.bar-sorted {
+    background-color: #22C55E; /* green-500 */
+}
+
+.controls button, .controls select, .controls input {
+    transition: all 0.2s ease-in-out;
+}
+
+.controls *:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.slider-thumb::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #3B82F6; /* blue-500 */
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.slider-thumb::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #3B82F6; /* blue-500 */
+    cursor: pointer;
+    border-radius: 50%;
+}
